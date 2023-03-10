@@ -23,7 +23,7 @@ def main(filePath:str,fileName:str,fileType:str):
     for indexList  in allIndexList:
         for value in indexList:
             # 跳过pandas的空值
-            if  pd.isnull(value):
+            if  pd.isna(value):
                 continue
             valueList.append(value)
     # 通过集合实现类别
